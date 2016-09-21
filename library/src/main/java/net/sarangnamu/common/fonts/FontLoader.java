@@ -23,6 +23,8 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckedTextView;
+import android.widget.EditText;
 import android.widget.TextView;
 
 /**
@@ -95,6 +97,10 @@ public class FontLoader {
 
             if (child instanceof TextView) {
                 ((TextView) child).setTypeface(tf);
+            } else if (child instanceof CheckedTextView) {
+                ((CheckedTextView) child).setTypeface(tf);
+            } else if (child instanceof EditText) {
+                ((EditText) child).setTypeface(tf);
             } else if (child instanceof ViewGroup) {
                 applyChild(fontName, ((ViewGroup) child));
             }
