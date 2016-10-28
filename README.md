@@ -1,4 +1,5 @@
 # fonts
+[![Build Status](https://travis-ci.org/aucd29/font.svg?branch=master)](https://travis-ci.org/aucd29/font)
 
 Add it to your build.gradle with:
 ```gradle
